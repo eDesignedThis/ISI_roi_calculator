@@ -1,0 +1,86 @@
+
+<form class="form-horizontal" action="">
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="num_target_cust">Target Number of Incentive Participants</label>
+        <input class="form-control d-block" id="num_target_cust" type="text" aria-describedby="num_target_cust" value="500"/>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="avg_cust_sales_vol">Average Annual Sales Per Incentive Participant</label>
+        <input class="form-control" id="avg_cust_sales_vol" type="text" aria-describedby="avg_cust_sales_vol" value="$50,000"/>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <div class="row no-gutters">
+          <div class="col-8">
+            <label for="avg_gross_margin">Average Gross Margin of Sales</label>
+          </div>
+          <div class="col-4 text-right">
+            <div id="avg_gross_margin_output"></div>
+          </div>
+        </div>
+        <input class="form-control-range" id="avg_gross_margin" type="range" min="1" max="100" value="25"/>
+      </div>
+    </div>
+  </div>
+  <div class="row"> 
+    <div class="col-12">
+      <div class="form-group">
+        <div class="row no-gutters">
+          <div class="col-8">
+            <label for="sales_payout">Percent of Sales Budgeted for Incentive Payout</label>
+          </div>
+          <div class="col-4 text-right">
+            <div id="sales_payout_output"></div>
+          </div>
+        </div>
+        <input class="form-control-range" id="sales_payout" type="range" min="1" max="100" value="1"/>
+      </div>
+    </div>
+  </div>
+  <div class="row d-none"> 
+    <div class="col-12">
+      <div class="form-group">
+        <div class="row no-gutters">
+          <div class="col-8">
+            <label for="sales_increase_est">Sales Increase Estimate</label>
+          </div>
+          <div class="col-4 text-right">
+            <div id="sales_increase_est_output"></div>
+          </div>
+        </div>
+        <input class="form-control-range" id="sales_increase_est" type="range" min="1" max="100" value="1"/>
+      </div>
+    </div>
+  </div>
+  <div class="row"> 
+    <div class="col-12">
+      <div class="form-group">
+        <div class="row no-gutters">
+          <div class="col-8">
+            <label for="current_roi">Current ROI on Average Marketing Dollars</label>
+          </div>
+          <div class="col-4 text-right">
+            <div id="current_roi_output"></div>
+          </div>
+        </div>
+        <input class="form-control-range" id="current_roi" type="range" min="1" max="100" value="10"/>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="actions"> 
+    <div class="col-6 mx-auto">
+      <div class="form-group">
+        <button class="btn btn-primary btn-block" id="calc_button" type="button">Calculate ROI</button>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,23 @@
+@import "css/components/_variables.scss";
+
+body,
+html {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-muted {
+  color: #cacaca !important;
+}
+
+#avg_gross_margin_output,
+#sales_increase_est_output,
+#sales_payout_output,
+#current_roi_output {
+  font-weight: bold;
+  &:after {
+    content: "%";
+  }
+}

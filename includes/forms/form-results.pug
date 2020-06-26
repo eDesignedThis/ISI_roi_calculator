@@ -1,0 +1,69 @@
+form.form-horizontal-results(action="")
+    .form-row.mb-2.text-dark
+        .col-6.col-sm-4.mb-2
+            .card.h-100
+                .card-body.text-center.d-flex.flex-column                  
+                    .display-4.text-center.text-muted
+                        span.fas.fa-bullseye
+                        
+                    label.d-block.mb-0.my-2(for='total_sales_target_cust') Total Sales of Target Customers
+                
+                    .form-group.mb-0.d-block
+                        input#total_sales_target_cust.form-control-plaintext.text-center(type='text' readonly='' aria-describedby='total_sales_target_cust', value='$10,000,000')
+        .col-6.col-sm-4.mb-2
+            .card.h-100
+                .card-body.text-center.d-flex.flex-column                  
+                    .display-4.text-center.text-muted
+                        span.fas.fa-balance-scale-right
+                        
+                    label.d-block.mb-0.my-2(for='total_prog_cost') Total Program Cost
+                
+                    .form-group.mb-0.d-block
+                        input#total_prog_cost.form-control-plaintext.text-center(type='text' readonly='' aria-describedby='total_prog_cost', value='$105,000')
+        .col-6.col-sm-4.mb-2
+            .card.h-100
+                .card-body.text-center.d-flex.flex-column                  
+                    .display-4.text-center.text-muted
+                        span.fas.fa-chart-pie
+                        
+                    label.d-block.mb-0.my-2(for='avg_cust_equity') Average Customer Equity
+                
+                    .form-group.mb-0.d-block
+                        input#avg_cust_equity.form-control-plaintext.text-center(type='text' readonly='' aria-describedby='avg_cust_equity', value='$100,000')
+    //Second Row
+    .form-row.text-dark
+        .col-6.col-sm-4.mb-2
+            .card.h-100
+                .card-body.text-center.d-flex.flex-column                  
+                    .display-4.text-center.text-muted
+                        span.fas.fa-rocket
+                        
+                    label.d-block.mb-0.my-2(for='sales_increase') Sales Increase
+                
+                    .form-group.mb-0.d-block
+                        input#sales_increase.form-control-plaintext.text-center(type='text' readonly='' aria-describedby='sales_increase', value='$500,000')
+        .col-6.col-sm-4.mb-2
+            .card.h-100
+                .card-body.text-center.d-flex.flex-column                  
+                    .display-4.text-center.text-muted
+                        span.fas.fa-seedling
+                        
+                    label.d-block.mb-0.my-2(for='margin_increase') Margin Increase
+                
+                    .form-group.mb-0.d-block
+                        input#margin_increase.form-control-plaintext.text-center(type='text' readonly='' aria-describedby='margin_increase', value='$150,000')
+        .col-6.col-sm-4.mb-2
+            .card.h-100
+                .card-body.text-center.d-flex.flex-column                  
+                    .display-4.text-center.text-muted
+                        span.fas.fa-tag
+                        
+                    label.d-block.mb-0.my-2(for='prog_cost') Program Cost
+                
+                    .form-group.mb-0.d-block
+                        input#prog_cost.form-control-plaintext.text-center(type='text' readonly='' aria-describedby='prog_cost', value='$105,000')
+    
+  
+            
+            
+        

@@ -1,0 +1,16 @@
+{
+  "name": "roi-calculator",
+  "version": "1.0.0",
+  "description": "ROI calculator for incentive program.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculator",
+    "roi",
+    "calculator"
+  ],
+  "author": "Erika 'E' Wright",
+  "license": "ISC"
+}

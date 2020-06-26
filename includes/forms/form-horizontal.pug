@@ -1,0 +1,60 @@
+form.form-horizontal(action="")
+    .row
+        .col-12
+            .form-group
+                label(for='num_target_cust') Target Number of Incentive Participants
+                input#num_target_cust.form-control.d-block(type='text' aria-describedby='num_target_cust' value='500')
+    .row
+        .col-12
+            .form-group
+                label(for='avg_cust_sales_vol') Average Annual Sales Per Incentive Participant
+                input#avg_cust_sales_vol.form-control(type='text' aria-describedby='avg_cust_sales_vol', value='$50,000')
+            
+    .row
+        .col-12
+            .form-group
+                .row.no-gutters
+                    .col-8
+                        label(for='avg_gross_margin') Average Gross Margin of Sales
+                    .col-4.text-right
+                        #avg_gross_margin_output
+
+                input#avg_gross_margin.form-control-range(type='range' min='1' max='100' value='25')
+                
+    .row 
+        .col-12
+            .form-group
+                .row.no-gutters
+                    .col-8
+                        label(for='sales_payout') Percent of Sales Budgeted for Incentive Payout
+                    .col-4.text-right
+                        #sales_payout_output
+                input#sales_payout.form-control-range(type='range' min='1' max='100' value='1')
+    .row.d-none 
+        .col-12
+            .form-group
+                .row.no-gutters
+                    .col-8
+                        label(for='sales_increase_est') Sales Increase Estimate
+                    .col-4.text-right
+                        #sales_increase_est_output
+
+                input#sales_increase_est.form-control-range(type='range' min='1' max='100' value='1')
+    .row 
+        .col-12
+            .form-group
+                .row.no-gutters
+                    .col-8
+                        label(for='current_roi') Current ROI on Average Marketing Dollars
+                    .col-4.text-right
+                        #current_roi_output
+
+                input#current_roi.form-control-range(type='range' min='1' max='100' value='10')
+    
+    .row#actions 
+        .col-6.mx-auto
+            .form-group
+                button#calc_button.btn.btn-primary.btn-block(type='button') Calculate ROI
+    
+
+         

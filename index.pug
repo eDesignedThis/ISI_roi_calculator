@@ -1,0 +1,48 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+  //FontAwesome 
+  script(src='https://kit.fontawesome.com/5f21471d45.js' crossorigin='anonymous')
+  // Devextreme CSS
+  link(rel='stylesheet' href='https://cdn3.devexpress.com/jslib/20.1.4/css/dx.common.css')
+  link(rel='stylesheet' href='https://cdn3.devexpress.com/jslib/20.1.4/css/dx.light.css')
+  // DevExtreme library
+  
+  link(rel='stylesheet', href='/style.css')
+  title ROI- Calculator - How Can Incentives Benefit You?
+body
+    block content
+        main
+            .row.mx-auto.align-items-center
+                //- Remove the .col-6 and reset to .col once app is working
+                .col-lg-6
+                    include includes/widget-title.pug
+                    
+                    .row.mx-auto#form-wrapper
+                        .col-sm-10.col-md-9.col-xl-5.px-xl-6.mx-auto
+                            include includes/forms/form-horizontal.pug
+                
+                .col-lg-6.bg-light.text-white.py-5
+                    .row.mb-5.align-items-center
+                        .col-xl-6
+                            #chart.w-100
+                        .col-xl-6
+                            include includes/forms/form-results.pug
+
+                
+                    
+        
+    
+
+
+
+
+script(src='https://code.jquery.com/jquery-3.5.1.min.js')
+script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
+script(type='text/javascript' src='https://cdn3.devexpress.com/jslib/20.1.4/js/dx.all.js')
+script(src='/app.js')
