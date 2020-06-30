@@ -1,0 +1,27 @@
+a.text-primary(data-toggle='modal' data-target='#roiModal')
+    span.mr-1.fas.fa-tasks
+    span Instructions
+// Modal
+#roiModal.modal.fade.text-left(tabindex='-1' role='dialog' aria-labelledby='roiModalLabel' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            .modal-header
+                h5#roiModalLabel.modal-title.font-weight-light Steps for Using Incentive Solutions' ROI Calculator
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                ol
+                    li Enter the number of participants you plan on enrolling in your incentive program.
+                    li Enter the average sales volume for each participant.
+                    li Enter your average gross margin of sales.
+                    li Enter the percent of sales that will be allocated to rewarding participants. Most businesses allocate between 1% and 2%, depending on average salves volume per participant and the desired value proposition.
+                    li Enter the current ROI on your average marketing dollar. According to Nielson Global Media, the average ROI on each marketing dollar is 9%.
+                    li Fill out the remaining fields for an in-depth ROI analysis and a PDF of your results to show your coworkers!
+
+                .alert.alert-info
+                    p.mb-0 
+                        |   Additionally, there are strategies we can explore to increase your business growth and improve your distribution channel sales. The ROI calculator is intended to give you a ballpark estimate, but we encourage you to discuss possibilities for you company's incentive program with an 
+                        span 
+                            a(href="#" target="_blank") ROI-certified expert.
+            .modal-footer
+                button.btn.btn-primary(type='button' data-dismiss='modal') Close

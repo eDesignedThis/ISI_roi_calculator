@@ -14,11 +14,10 @@ head
   
   link(rel='stylesheet', href='/style.css')
   title ROI- Calculator - How Can Incentives Benefit You?
-body
+body.option__one__bg
     block content
         main
-            .row.mx-auto.align-items-center
-                //- Remove the .col-6 and reset to .col once app is working
+            .row.mx-auto.align-items-xl-center.py-sm-5
                 .col-lg-6
                     include includes/widget-title.pug
                     
@@ -26,8 +25,8 @@ body
                         .col-sm-10.col-md-9.col-xl-5.px-xl-6.mx-auto
                             include includes/forms/form-horizontal.pug
                 
-                .col-lg-6.bg-light.text-white.py-5
-                    .row.mb-5.align-items-center
+                .col-lg-6.p-5.border-left.border-dark
+                    .row.align-items-center
                         .col-xl-6
                             #chart.w-100
                         .col-xl-6

@@ -1,5 +1,9 @@
 @import "css/components/_variables.scss";
 
+$primary: #e40c2b;
+$accent: #27306a;
+$secondary: #107e8a;
+
 body,
 html {
   min-height: 100%;
@@ -8,8 +12,30 @@ html {
   justify-content: center;
 }
 
+.display-4 {
+  font-size: 1.75rem;
+}
+
+.card-body {
+  .fas {
+    font-size: 2rem;
+    background: lighten($secondary, 65%);
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s;
+    color: $secondary;
+    &:hover {
+      color: $accent;
+      background: lighten($accent, 65%);
+    }
+  }
+}
+
 .text-muted {
-  color: #cacaca !important;
+  color: $accent !important;
 }
 
 #avg_gross_margin_output,
@@ -19,5 +45,67 @@ html {
   font-weight: bold;
   &:after {
     content: "%";
+  }
+}
+
+.option__one__bg {
+  background-size: cover;
+  background-position: left bottom;
+  background-image: url("https://images.unsplash.com/photo-1524055988636-436cfa46e59e");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.75);
+  }
+}
+
+#roiModal li {
+  margin-bottom: 1em;
+}
+
+/*=================================Bootstrap Overrides==============================*/
+
+/*==================================================================================*/
+
+a.text-primary {
+  color: $primary !important;
+  &:hover {
+    color: darken($primary, 10%) !important;
+  }
+}
+.btn {
+  border-radius: 2px;
+}
+
+.btn-primary {
+  background: $primary;
+  border-color: $primary;
+
+  &:hover {
+    background: darken($primary, 10%);
+    border-color: darken($primary, 10%);
+  }
+}
+
+.btn-outline-primary {
+  border-color: $primary;
+  color: $primary;
+  &:hover {
+    background: darken($primary, 10%);
+    border-color: darken($primary, 10%);
+    color: white;
+  }
+}
+
+@media (min-width: 1200px) {
+  .display-4 {
+    font-size: 3.5rem;
   }
 }
